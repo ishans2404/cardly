@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #FFFFFF;
+  background: #1c1d1f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #132D46;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #98accb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00A377;
+}
+
+/* Smooth transitions */
+.MuiCard-root,
+.MuiButton-root {
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
