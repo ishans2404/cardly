@@ -10,6 +10,7 @@ import { db } from '../../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
+import Script from "next/script";
 
 // Create a dark theme
 const darkTheme = createTheme({
